@@ -42,14 +42,9 @@ input {
   display: flex;
   justify-content: space-between;
   margin: 8px 0;
-  padding: 12px;
+  padding: 12px 12px;
   border: 1px solid #989898;
-}
-.info {
-  padding-top: 12px;
-}
-.begin {
-  background-color: #f4f4f4;
+  border-radius: 6px;
 }
 
 .icon {
@@ -111,11 +106,6 @@ button .icon {
 button :active.icon {
   transform: rotate(45deg);
 }
-.btn-radio {
-  position: absolute;
-  width: 21px;
-  height: 21px;
-}
 
 .make__label {
   width: 90%;
@@ -125,7 +115,31 @@ button :active.icon {
 }
 
 .make__text {
-  display: block;
+  display: inline-block;
   position: relative;
-  padding-left: 33px;
+  padding-left: 23px;
+}
+.btn-check {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  display: none;
+}
+
+.custom-checkbox {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  outline: 1px double #c4c4c4;
+  border-radius: 50%;
+  cursor: pointer;
+  vertical-align: text-top;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox {
+  width: 15px;
+  height: 15px;
+  background-color: #c4c4c4;
+  outline-color: #c4c4c4;
+  outline-width: 3px;
 }
