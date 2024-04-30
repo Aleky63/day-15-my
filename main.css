@@ -54,6 +54,7 @@ input {
   height: 20px;
   transform: rotate(45deg);
   cursor: pointer;
+  transition: transform 0.4s ease-in-out;
 }
 
 .icon::before {
