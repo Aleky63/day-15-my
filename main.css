@@ -54,7 +54,7 @@ input {
   height: 20px;
   transform: rotate(45deg);
   cursor: pointer;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .icon::before {
@@ -142,5 +142,5 @@ input[type="checkbox"]:checked + .custom-checkbox {
   height: 15px;
   background-color: #c4c4c4;
   outline-color: #c4c4c4;
-  outline-width: 3px;
+  outline-width: 4px;
 }
