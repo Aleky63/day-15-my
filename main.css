@@ -108,9 +108,6 @@ button :active.icon {
   transform: rotate(45deg);
 }
 
-.make__label {
-  width: 90%;
-}
 .make_app {
   background-color: #f4f4f4;
 }
@@ -118,7 +115,8 @@ button :active.icon {
 .make__text {
   display: inline-block;
   position: relative;
-  padding-left: 23px;
+  padding: 0 20px;
+  width: 85%;
 }
 .btn-check {
   display: inline-block;
