@@ -99,7 +99,7 @@ button :active.icon {
   display: flex;
   justify-content: space-between;
   margin: 8px 0;
-  padding: 12px 12px;
+  padding: 12px;
   border: 1px solid #989898;
   border-radius: 6px;
 }
@@ -111,7 +111,7 @@ button :active.icon {
   display: inline-block;
   position: relative;
   padding: 0 20px;
-  width: 85%;
+  width: 80%;
 }
 .make__label {
   border-radius: 50%;
