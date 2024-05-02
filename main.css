@@ -16,11 +16,9 @@ h1 {
 }
 
 input {
-  padding: 8px 12px;
-  width: 95%;
   margin: 0;
+  padding: 0;
   font-size: inherit;
-  border: 1px solid #989898;
 }
 
 .container {
@@ -38,15 +36,6 @@ input {
   padding-bottom: 180px;
 }
 
-.make {
-  display: flex;
-  justify-content: space-between;
-  margin: 8px 0;
-  padding: 12px 12px;
-  border: 1px solid #989898;
-  border-radius: 6px;
-}
-
 .icon {
   position: relative;
   display: block;
@@ -54,7 +43,6 @@ input {
   height: 20px;
   transform: rotate(45deg);
   cursor: pointer;
-  transition: transform 0.3s ease-in-out;
 }
 
 .icon::before {
@@ -107,7 +95,14 @@ button .icon {
 button :active.icon {
   transform: rotate(45deg);
 }
-
+.make {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  padding: 12px 12px;
+  border: 1px solid #989898;
+  border-radius: 6px;
+}
 .make_app {
   background-color: #f4f4f4;
 }
@@ -118,20 +113,22 @@ button :active.icon {
   padding: 0 20px;
   width: 85%;
 }
+.make__label {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #989898;
+  padding: 2px;
+}
 .btn-check {
-  display: inline-block;
-  width: 21px;
-  height: 21px;
   display: none;
 }
 
 .custom-checkbox {
   display: inline-block;
-  width: 21px;
-  height: 21px;
-  outline: 1px double #c4c4c4;
   border-radius: 50%;
   cursor: pointer;
+  border-color: #e72c2c;
   vertical-align: text-top;
 }
 
@@ -139,6 +136,4 @@ input[type="checkbox"]:checked + .custom-checkbox {
   width: 15px;
   height: 15px;
   background-color: #c4c4c4;
-  outline-color: #c4c4c4;
-  outline-width: 4px;
 }
